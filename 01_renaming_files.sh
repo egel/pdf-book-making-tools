@@ -10,7 +10,7 @@ bash_ver=${BASH_VERSION}
 AMOUNT_OF_FILES=$(ls -1 $DIR | wc -l)
 
 EXT=png   # files extension
-DIR=~/Pulpit/Latex_book_step_2/ # source images path
+DIR=~/Pulpit/Latex_book_step_2/ # path to images (source)
 
 echo -e "${purple}######################################${endColor}"
 echo -e "${purple}# Program for massive renaming files #${endColor}"
