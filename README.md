@@ -1,41 +1,51 @@
-# PDF book making tools
-This repo contains simple tools for quick and efficent making your own PDF file from images.
+# PDF making tools
+
+[![MIT LICENSE](http://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat-square)](https://github.com/egel/pdf-book-making-tools/blob/master/LICENSE)
+
+> This repo contains simple tools for quick and efficent making your own PDF file from images.
+
+* * *
+[Table of content](#table-of-content)
+* * *
+
 
 > For almost every step we will need to use `imagemagick`. To install it on Debian based distros use: `sudo apt-get install imagemagick`.
 
-## Convert images to one file format
-If you have different formats of files it's recommended to convert it for one common (ex: PNG).
+## Table of content
+
+### Convert images to one file format
+If you have different formats of files it's recommended to convert it for one common (ex: `PNG`).
 
     mogrify -format jpg *.png
 
-## Rename and sort files
+### Rename and sort files
 To achieve this task you can use `renaming_files.sh` and `extending_filename.sh`
 
-#### Renaming
+##### Renaming
 First one, trim names of scanned files to one general convention. For example: `Picture.png`, `Picture (2).png`, `Picture (3).png`, ... , `Picture (100).png` you can change in one second into: `1.png`, `2.png`, `3.png`, ... , `100.png`
 
 
-#### Sorting
+##### Sorting
 Bash a bit different recognise the list of elements. The order of files in bash console can be present like this: `1.jpg`, `10.jpg`, `100.jpg`, `2.jpg`, ..., `99.jpg`. We will change it into: `001.jpg`, `002.jpg`, `010.jpg`, ..., `099.jpg`, `100.jpg`.
 
-## Rotate images
+### Rotate images
 Sometimes images are saved with wrong angle (90, 180 or 270 degree). To solve this unconvenient problem you can use `rotate_images.sh` script.
 
 It helps to handle with massive rotating images stored in folder. Sometimes scanned images are in oposite rotations 0 and 180, or 90 and 270. This script can be easly set commands for even and odd images for easy detection.
 
-#### Contrast
+##### Contrast
 In some cases (RGB) rotating the image increase its contrast (Like cover). To reduce this you can change task to `rotate_images.sh` for increase contrast for those images which have less contrast to others.
 
 Example command:
 
     convert "${TEMP_ARRAY[i]}.$EXT" -contrast -contrast "${TEMP_ARRAY[i]}.$EXT"
 
-## Cropping and aligning all images
+### Cropping and aligning all images
 Usualy it is a manual step. Need to look through all the files and correct. Best tool for this step (and all others if you need) is just `Shotwell Viewer`. Yeah as simple as you see, you do not need any extra program (in fact it's usually preinstalled in most new distros).
 
 Use Shotwell `aligning` feature to adjust images to proper angle (it usualy a small corrections for images).
 
-## Search an image with the lowest resolution and width
+### Search an image with the lowest resolution and width
 To have best quality of PDF you need to equalize all images to the lowest.
 
 Below script help you with finding lowers resolution from all images you have.
@@ -91,7 +101,7 @@ Sample result:
 > This 2 factors (`Resolution` and `Geometry` width) for all files should be the same!!!
 
 
-## Weight reduction and image quality (optional)
+### Weight reduction and image quality (optional)
 According to results, we need to run commad to equalize Geometry width for all images:
 
 > **Note:** Changes images done on current photographs!!!
@@ -99,7 +109,7 @@ According to results, we need to run commad to equalize Geometry width for all i
 
     mogrify -geometry 1757x *.png
 
-# Verification of compliance of the order and the parties
+### Verification of compliance of the order and the parties
 Now left the final step before the conversion - verification of our files.
 
 By verification I mean a simple check of correct numbering of subsequent pages and thus whether I made a PDF file.
@@ -107,7 +117,7 @@ By verification I mean a simple check of correct numbering of subsequent pages a
 > Pay attention to the numbering of the pages to agree with the parties elected PDF search engine (go to page).
 
 
-## Convert images to a PDF
+### Convert images to a PDF
 
 To convert just run below command into folder with images:
 
@@ -116,8 +126,6 @@ To convert just run below command into folder with images:
     convert * .png ksiazka.pdf
 
 
-## The End :)
-
-
+**The End :)**
 
 
