@@ -4,14 +4,25 @@
 
 > This repo contains simple tools for quick and efficent making your own PDF file from images.
 
-* * *
-[Table of content](#table-of-content)
-* * *
-
-
-> For almost every step we will need to use `imagemagick`. To install it on Debian based distros use: `sudo apt-get install imagemagick`.
-
 ## Table of content
+
+  - [Installation](#installation)
+  - [Convert images to one file format](#convert-images-to-one-file-format)
+  - [Rename and sort files](#rename-and-sort-files)
+  - [Rotate images](#rotate-images)
+  - [Cropping and aligning all images](#cropping-and-aligning-all-images)
+  - [Search an image with the lowest resolution and width](#search-an-image-with-the-lowest-resolution-and-width)
+  - [Weight reduction and image quality (optional)](#weight-reduction-and-image-quality-optional)
+  - [Verification of compliance of the order and the parties](#verification-of-compliance-of-the-order-and-the-parties)
+  - [Convert images to a PDF](#convert-images-to-a-PDF)
+  -
+
+### Installation
+
+For almost every step we will need to use `imagemagick` and partly `awk`. To install it on Debian based distros use:
+
+    sudo apt-get install imagemagick awk
+
 
 ### Convert images to one file format
 If you have different formats of files it's recommended to convert it for one common (ex: `PNG`).
