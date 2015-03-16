@@ -14,8 +14,7 @@
   - [Search an image with the lowest resolution and width](#search-an-image-with-the-lowest-resolution-and-width)
   - [Weight reduction and image quality (optional)](#weight-reduction-and-image-quality-optional)
   - [Verification of compliance of the order and the parties](#verification-of-compliance-of-the-order-and-the-parties)
-  - [Convert images to a PDF](#convert-images-to-a-PDF)
-  -
+  - [Convert images to a PDF](#convert-images-to-a-pdf)
 
 ### Installation
 
