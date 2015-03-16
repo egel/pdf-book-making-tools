@@ -1,6 +1,6 @@
 # PDF making tools
 
-[![MIT LICENSE](http://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat-square)](https://github.com/egel/pdf-book-making-tools/blob/master/LICENSE)
+[![MIT LICENSE](http://img.shields.io/badge/license-MIT-yellowgreen.svg?style=flat-square)](https://github.com/egel/pdf-making-tools/blob/master/LICENSE)
 
 > This repo contains simple tools for quick and efficent making your own PDF file from images.
 
