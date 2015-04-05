@@ -110,14 +110,20 @@ Sample result:
 
 > This 2 factors (`Resolution` and `Geometry` width) for all files should be the same!!!
 
-
-### Weight reduction and image quality (optional)
 According to results, we need to run commad to equalize Geometry width for all images:
 
 > **Note:** Changes images done on current photographs!!!
 > So let's make a copy to a new folder and work on it.
 
     mogrify -geometry 1757x *.png
+
+### Weight reduction and image quality (optional)
+If images seams to be to heavy we can easly change it by running below command:
+
+    mogrify -resize 60% -quality 80% *.png
+
+> This command resize all images in current folder and reduce quality to target point. Feel free to change those numbers to suite your needs.
+> **REMEMBER TO TAKE A COPY OF ALL FILES, BECAUSE IT APPLY CHANGES ON CURRENT FILES!**
 
 ### Verification of compliance of the order and the parties
 Now left the final step before the conversion - verification of our files.
