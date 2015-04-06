@@ -139,7 +139,7 @@ To convert just run below command into folder with images:
 
 > It also can take a while. It depends on computer parameters.
 
-    convert * .png ksiazka.pdf
+    convert *.png ksiazka.pdf
 
 
 **The End :)**
