@@ -48,7 +48,7 @@ In some cases (RGB) rotating the image increase its contrast (Like cover). To re
 
 Example command:
 
-    convert "${TEMP_ARRAY[i]}.$EXT" -contrast -contrast "${TEMP_ARRAY[i]}.$EXT"
+    convert "${TEMP_ARRAY[i]}.$EXT" -contrast "${TEMP_ARRAY[i]}.$EXT"
 
 ### Cropping and aligning all images
 Usualy it is a manual step. Need to look through all the files and correct. Best tool for this step (and all others if you need) is just `Shotwell Viewer`. Yeah as simple as you see, you do not need any extra program (in fact it's usually preinstalled in most new distros).
@@ -139,7 +139,7 @@ To convert just run below command into folder with images:
 
 > It also can take a while. It depends on computer parameters.
 
-    convert *.png ksiazka.pdf
+    convert *.png book.pdf
 
 
 **The End :)**
